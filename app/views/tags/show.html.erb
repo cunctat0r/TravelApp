@@ -13,9 +13,10 @@
 
       <% @destinations.each do |dest| %>
         <div class="card col-xs-4">
-          <img src='<%= dest.image %>' />
+          <%= image_tag dest.image %>
           <h2> <%= dest.name %> </h2>
           <p> <%= dest.description %> </p>
+           <%= link_to "See more", destination_path(dest) %>
         </div>
       <% end %>
 
