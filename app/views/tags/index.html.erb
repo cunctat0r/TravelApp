@@ -13,7 +13,8 @@
       <div class="card col-xs-4">
         <img src="<%= t.image %>" />
         <h2> <%= t.title %> </h2>
-      </div>
+        <%= link_to "Learn more", tag_path(t) %>
+      </div>      
     <% end %>              
     </div>
     
